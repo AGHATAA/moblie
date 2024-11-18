@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculador coll
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-button (click)="somar()">Calcular</ion-button>
+
+<ion-item>
+  <ion-input label="Valor em dolar" labelPlacement="floating" placeholder="Valor em dolar" [(ngModel)]="dolar" type="number"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Preço do real" labelPlacement="floating" placeholder="Preço do real" [(ngModel)]="real" type="number"></ion-input>
+</ion-item>
+
+<ion-button (click) = "somar()" fill="outline" >Outline</ion-button>
+<ion-label>{{calc}}
+</ion-label>
+</ion-content>
