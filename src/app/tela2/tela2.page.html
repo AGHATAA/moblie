@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Confirmação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"><br>
+
+<ion-label *ngIf="op">SUA RESERVA PARA O QUARTO {{op}} FOI EFETUADA COM SUCESSO!</ion-label><br><br>
+<ion-label *ngIf="!op">Dados não disponíveis.</ion-label>
+
+<ion-button expand="block" [routerLink]="['/']">Retornar para a Pagina Principal</ion-button>
+
+  
+
+
+
+
+
+</ion-content>

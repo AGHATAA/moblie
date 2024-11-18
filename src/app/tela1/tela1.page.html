@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Dados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<div *ngIf="op && total !== null">
+  <p>Opção selecionada: {{op}}</p>
+  <p>Quantidade de Dias: {{qtd}}</p>
+  <p>Total a pagar: R$ {{total}}</p>
+</div>
+
+<div *ngIf="!op || total === null">
+  <p>Dados não disponíveis.</p>
+</div>
+
+<ion-button expand="block" [routerLink]="['/']">Corrigir</ion-button>
+
+<ion-button expand="block" [routerLink]="['/tela2']"[queryParams]="{pop: op}">Confirmar</ion-button>
+
+
+
+
+
+</ion-content>
